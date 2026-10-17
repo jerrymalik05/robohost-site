@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RoboHost — Freedom for hosts</title>
+    <meta
+      name="description"
+      content="RoboHost is the AI co-host for Indian homestays and short-stay rentals: guest messaging, OTA operations, calendar and price sync, cleaning, billing and GST, all run from WhatsApp."
+    />
+    <!-- Phase 43 landing faces: Bricolage Grotesque (display), DM Sans (body) and Tiro
+         Devanagari Hindi (the one Hindi accent line). Only the landing page uses them, and
+         a browser fetches a font file only once something on screen asks for it. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=DM+Sans:opsz,wght@9..40,400..700&family=Tiro+Devanagari+Hindi&display=swap"
+    />
+    <!-- Phase 42: resolve the theme before the first paint. React mounting is async, so
+         without this a light-mode reload flashes the dark palette for a frame or two.
+         Mirrors the resolution order in src/context/ThemeContext.jsx: explicit stored
+         choice first, otherwise follow the OS. Kept inline and dependency-free so it runs
+         ahead of the module bundle. -->
+    <script>
+      ;(function () {
+        try {
+          var stored = localStorage.getItem("robohost.theme")
+          var theme =
+            stored === "light" || stored === "dark"
+              ? stored
+              : window.matchMedia("(prefers-color-scheme: light)").matches
+                ? "light"
+                : "dark"
+          document.documentElement.setAttribute("data-theme", theme)
+          document.documentElement.style.colorScheme = theme
+        } catch (e) {
+          document.documentElement.setAttribute("data-theme", "dark")
+        }
+      })()
+    </script>
+    <script type="module" crossorigin src="/assets/site-Dhu0ADoQ.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/site-BEUnA0X8.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
