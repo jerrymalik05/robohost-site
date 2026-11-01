@@ -1,0 +1,636 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy policy · RoboHost</title>
+    <meta
+      name="description"
+      content="How RoboHost, a product of Iraava Hospitality Private Limited, collects, uses, shares and protects personal data, and how to see, correct or delete yours."
+    />
+    <link rel="canonical" href="https://robohost.co.in/privacy" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="RoboHost" />
+    <meta property="og:url" content="https://robohost.co.in/privacy" />
+    <meta property="og:title" content="RoboHost privacy policy" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=DM+Sans:opsz,wght@9..40,400..700&display=swap"
+    />
+    <!-- Same theme resolution as site.html: stored choice first, otherwise the OS. -->
+    <script>
+      ;(function () {
+        try {
+          var stored = localStorage.getItem("robohost.theme")
+          var theme =
+            stored === "light" || stored === "dark"
+              ? stored
+              : window.matchMedia("(prefers-color-scheme: light)").matches
+                ? "light"
+                : "dark"
+          document.documentElement.setAttribute("data-theme", theme)
+          document.documentElement.style.colorScheme = theme
+        } catch (e) {
+          document.documentElement.setAttribute("data-theme", "dark")
+        }
+      })()
+    </script>
+    <!-- The site's tokens and Tailwind utilities. This page has no React and no script of its
+         own: the policy is plain HTML so Meta's app review (and any crawler) reads it as-is. -->
+    <link rel="stylesheet" crossorigin href="/assets/src-DTPCVcji.css">
+    <link rel="stylesheet" crossorigin href="/assets/legal-BRruz6NL.css">
+  </head>
+  <body>
+    <div class="landing-root min-h-screen bg-night-950 text-ink antialiased">
+      <a
+        href="#policy"
+        class="sr-only rounded-full bg-marigold-fill px-4 py-2 text-sm font-semibold text-on-marigold focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-10"
+        >Skip to the policy</a
+      >
+
+      <header class="border-b border-night-line">
+        <div class="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-4 sm:h-20 sm:px-8">
+          <a href="/" class="flex items-center gap-2.5 rounded-xl outline-none focus-visible:ring-2 focus-visible:ring-marigold" aria-label="RoboHost home">
+            <span class="flex h-9 w-9 items-center justify-center rounded-xl bg-marigold-fill text-on-marigold shadow-glow-marigold">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" class="h-5 w-5">
+                <path d="M12 2 12 10.2 4 10.2Z" fill="currentColor" />
+                <path d="M12 2 20 10.2 12 10.2Z" fill="currentColor" fill-opacity="0.72" />
+                <path d="M4 10.2 12 10.2 12 18.4Z" fill="currentColor" fill-opacity="0.72" />
+                <path d="M12 10.2 20 10.2 12 18.4Z" fill="currentColor" fill-opacity="0.48" />
+                <path d="M12 18.4c-.3 1.1.9 1.5.7 2.4-.1.7-.8 1-.9 1.6" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" />
+              </svg>
+            </span>
+            <span class="font-display text-lg font-bold tracking-tight text-ink">Robo<span class="text-marigold">Host</span></span>
+          </a>
+          <a
+            href="/"
+            class="rounded-full px-3 py-2 text-sm font-medium text-ink-body outline-none transition-colors hover:text-ink focus-visible:ring-2 focus-visible:ring-marigold"
+            >Back to robohost.co.in</a
+          >
+        </div>
+      </header>
+
+      <main class="mx-auto max-w-6xl px-4 pb-24 pt-12 sm:px-8 sm:pt-16">
+        <div class="max-w-3xl">
+          <span class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-marigold">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" class="h-3.5 w-3.5">
+              <path d="M12 2 12 10.2 4 10.2Z" fill="currentColor" />
+              <path d="M12 2 20 10.2 12 10.2Z" fill="currentColor" fill-opacity="0.72" />
+              <path d="M4 10.2 12 10.2 12 18.4Z" fill="currentColor" fill-opacity="0.72" />
+              <path d="M12 10.2 20 10.2 12 18.4Z" fill="currentColor" fill-opacity="0.48" />
+            </svg>
+            Legal
+          </span>
+          <h1 class="mt-4 text-balance font-display text-[clamp(2.25rem,6vw,3.5rem)] font-bold leading-[1.06] tracking-[-0.02em] text-ink">
+            Privacy <span class="text-kesar">policy</span>
+          </h1>
+          <p class="mt-5 text-lg leading-relaxed text-ink-body">
+            How RoboHost collects, uses, shares and protects personal data. It covers your data if you are a host, and your
+            guests', tenants' and staff's data when you run your properties with RoboHost.
+          </p>
+          <p class="mt-4 text-sm text-ink-muted">Last updated 31 October 2026</p>
+
+          <div class="mt-10 rounded-2xl border border-marigold-line bg-marigold-soft p-5 sm:p-6">
+            <h2 class="font-display text-lg font-bold text-ink">The short version</h2>
+            <ul class="mt-3 list-disc space-y-2.5 pl-5 text-[15px] leading-relaxed text-ink-body marker:text-marigold">
+              <li>
+                RoboHost is provided by Iraava Hospitality Private Limited, an Indian company. For guests, tenants and staff,
+                we handle data on behalf of the host who uses RoboHost.
+              </li>
+              <li>
+                We collect what we need to run your properties: your account, your listings and bookings, and the messages
+                you and your guests exchange.
+              </li>
+              <li>We do not sell personal data, show ads, or use advertising or analytics trackers.</li>
+              <li>
+                Nova, our AI co-host, uses third-party AI models to draft replies. Those providers may not train their models
+                on the data we send.
+              </li>
+              <li>
+                To see, correct or delete your data, email
+                <a class="legal-link" href="mailto:robohost.co@gmail.com">robohost.co@gmail.com</a>. Deletion steps are in
+                <a class="legal-link" href="#delete-your-data">section 12</a>.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mt-14 lg:grid lg:grid-cols-[15rem_minmax(0,1fr)] lg:gap-16">
+          <nav aria-label="On this page" class="mb-12 rounded-2xl border border-night-line bg-night-900 p-5 lg:sticky lg:top-8 lg:mb-0 lg:self-start lg:border-0 lg:bg-transparent lg:p-0">
+            <p class="text-xs font-semibold uppercase tracking-[0.2em] text-ink-muted">On this page</p>
+            <ol class="mt-3 grid gap-x-6 gap-y-1.5 text-sm text-ink-body sm:grid-cols-2 lg:grid-cols-1">
+              <li><a class="rounded hover:text-ink" href="#who-we-are">1. Who we are</a></li>
+              <li><a class="rounded hover:text-ink" href="#what-we-collect">2. What we collect</a></li>
+              <li><a class="rounded hover:text-ink" href="#how-we-use-it">3. How we use it</a></li>
+              <li><a class="rounded hover:text-ink" href="#whatsapp">4. WhatsApp</a></li>
+              <li><a class="rounded hover:text-ink" href="#ai">5. Nova and AI</a></li>
+              <li><a class="rounded hover:text-ink" href="#sharing">6. Who we share it with</a></li>
+              <li><a class="rounded hover:text-ink" href="#storage">7. Where it is stored</a></li>
+              <li><a class="rounded hover:text-ink" href="#security">8. How we protect it</a></li>
+              <li><a class="rounded hover:text-ink" href="#retention">9. How long we keep it</a></li>
+              <li><a class="rounded hover:text-ink" href="#cookies">10. Cookies and browser storage</a></li>
+              <li><a class="rounded hover:text-ink" href="#your-rights">11. Your rights</a></li>
+              <li><a class="rounded hover:text-ink" href="#delete-your-data">12. Deleting your data</a></li>
+              <li><a class="rounded hover:text-ink" href="#children">13. Children</a></li>
+              <li><a class="rounded hover:text-ink" href="#changes">14. Changes to this policy</a></li>
+              <li><a class="rounded hover:text-ink" href="#contact">15. Contact and Grievance Officer</a></li>
+            </ol>
+          </nav>
+
+          <article id="policy" class="legal-prose max-w-3xl">
+            <section id="who-we-are">
+              <h2><span class="num">1</span>Who we are</h2>
+              <p>
+                RoboHost is software for people who run homestays, villas, serviced flats and rentals in India. It is provided
+                by <strong>Iraava Hospitality Private Limited</strong> ("Iraava", "we", "us"), Cloud-9 Towers, Vaishali,
+                Ghaziabad, Uttar Pradesh 201010, India.
+              </p>
+              <p>This policy covers:</p>
+              <ul>
+                <li>our website, robohost.co.in, and the RoboHost app at app.robohost.co.in;</li>
+                <li>RoboHost's WhatsApp number and the messages we send and receive on it;</li>
+                <li>the private links we send to guests, tenants and vendors (the guest portal, the vendor portal and agreement signing);</li>
+                <li>the emails we send about your account.</li>
+              </ul>
+              <p>
+                We follow India's Digital Personal Data Protection Act, 2023 (the "DPDP Act") and its Rules, and the
+                Information Technology Act, 2000 and its rules on reasonable security practices and sensitive personal data.
+              </p>
+              <h3>Our role</h3>
+              <p>
+                For your RoboHost account, our website and our waitlist, we decide why and how personal data is used. For
+                that data we are the <strong>data fiduciary</strong>.
+              </p>
+              <p>
+                When a host uses RoboHost to manage guests, tenants, cleaners and vendors, the host decides why that data is
+                used, and we process it on the host's instructions as a <strong>data processor</strong>. If you are one of
+                those people, the host is your first point of contact. <a href="#your-rights">Section 11</a> explains how we
+                help.
+              </p>
+            </section>
+
+            <section id="what-we-collect">
+              <h2><span class="num">2</span>What we collect</h2>
+
+              <h3>If you are a host or part of a host's team</h3>
+              <ul>
+                <li>
+                  <strong>Account details:</strong> your name, email address, mobile number and role (owner, co-host,
+                  property manager or investor). We store your password only as a salted one-way hash.
+                </li>
+                <li>
+                  <strong>Your properties:</strong> addresses, listing text and photos, house rules, check-in instructions,
+                  Wi-Fi details, door and lockbox codes, cleaning instructions, and contact details for your staff.
+                </li>
+                <li>
+                  <strong>Tax and payout details, if you add them:</strong> PAN, GSTIN and TAN, and the bank account (account
+                  holder, account number and IFSC) that owner payouts go to.
+                </li>
+                <li>
+                  <strong>Plan and billing:</strong> your plan, subscription status, invoices and payment references. You
+                  enter card and UPI details on Razorpay's pages, and they never reach our servers.
+                </li>
+                <li>
+                  <strong>Your work in RoboHost:</strong> messages you send, edits you make to Nova's drafts, rates and
+                  availability, tasks, agreements and settings.
+                </li>
+                <li>
+                  <strong>WhatsApp:</strong> your WhatsApp number and your chats with Nova, if you link them
+                  (<a href="#whatsapp">section 4</a>).
+                </li>
+              </ul>
+
+              <h3>From the booking sites and services you connect</h3>
+              <p>
+                When you connect a booking site, RoboHost reads your account there on your behalf: your listings, your host
+                profile (name, photo, rating and reviews), reservations, guest messages and earnings. We connect in one of
+                two ways, and you choose which:
+              </p>
+              <ul>
+                <li>you sign in on the booking site's own page, and we keep the resulting sign-in session, encrypted; or</li>
+                <li>
+                  you connect Airbnb, Booking.com or MakeMyTrip through Channex, our channel-manager partner, by signing in
+                  inside Channex's own window.
+                </li>
+              </ul>
+              <p>
+                Some connections ask for your username and password for the site. If you give them to us, we store them
+                encrypted and use them only to keep that connection working. Logging out of a site inside RoboHost deletes the
+                saved sign-in.
+              </p>
+              <p>
+                If you connect Urban Company, Snabbit or MagicBricks, we act in those accounts in the same way. For example,
+                we book a cleaning at your property's address.
+              </p>
+
+              <h3>About guests, on the host's behalf</h3>
+              <ul>
+                <li>name and phone number;</li>
+                <li>booking details: dates, number of guests, price, booking site and booking reference;</li>
+                <li>the messages and attachments guests send, on a booking site, on WhatsApp or in the guest portal;</li>
+                <li>
+                  for foreign nationals, the details Indian law requires for Form C: nationality, passport and visa numbers,
+                  visa type, and date and port of arrival in India. Passport and visa numbers are stored encrypted;
+                </li>
+                <li>invoices and payment status;</li>
+                <li>notes Nova writes when it screens a booking request, and gate-pass details for gated societies.</li>
+              </ul>
+              <p>
+                Guests see their stay details, check-in information and, during their stay, the door code through a private
+                link the host sends them.
+              </p>
+
+              <h3>About tenants, for long-term rentals</h3>
+              <p>
+                Name, phone number, email address, Aadhaar number (stored encrypted and shown only as its last four digits),
+                lease terms, rent invoices and maintenance requests. When a tenant accepts an agreement electronically, we
+                record the name they typed, the time and their IP address.
+              </p>
+
+              <h3>About cleaners, vendors and other staff</h3>
+              <p>
+                Name, phone number, email address, skills, working days and hours, languages, notes the host adds, and the
+                messages, photos and costs on the jobs they are given. Vendors open their jobs through a private link and do
+                not need an account.
+              </p>
+
+              <h3>If you visit our website or join the waitlist</h3>
+              <ul>
+                <li>
+                  <strong>Waitlist:</strong> your name, email address, mobile number, city, number of homes, the booking sites
+                  you use, your listing link if you add one, your referral code and who referred you, the campaign tags in the
+                  link you arrived from, the page that sent you, your IP address and your browser type.
+                </li>
+                <li>
+                  <strong>Free listing check and Nova Playground:</strong> the listing link and whatever you type or upload. We
+                  send it to our AI provider to produce your answer, and we don't save it to any account. Answers stay in our
+                  server's memory for up to 24 hours, and we hold your IP address in memory to limit how often the tools can
+                  be used.
+                </li>
+                <li>
+                  <strong>Chat on a direct-booking page:</strong> the messages you type. We send them to our AI provider to
+                  answer you, and we don't store them.
+                </li>
+                <li>
+                  <strong>Sign-ups:</strong> when you create an account or accept a team invitation, we note your IP address
+                  and browser type to spot fake sign-ups.
+                </li>
+              </ul>
+
+              <h3>Technical data</h3>
+              <p>
+                Our servers log requests (IP address, time, address requested and browser type) so we can keep the service
+                secure and fix problems.
+              </p>
+            </section>
+
+            <section id="how-we-use-it">
+              <h2><span class="num">3</span>How we use it</h2>
+              <ul>
+                <li>
+                  <strong>To provide RoboHost:</strong> syncing calendars, bookings and rates; drafting and sending the
+                  messages you approve; scheduling cleaning; preparing GST invoices, Form C and owner statements; and making
+                  payouts.
+                </li>
+                <li><strong>To run Nova</strong>, our AI co-host (<a href="#ai">section 5</a>).</li>
+                <li><strong>To keep accounts secure:</strong> sign-in, password resets, rate limits, and fraud and abuse checks.</li>
+                <li>
+                  <strong>To talk to you:</strong> account emails (welcome, password reset and security notices), the alerts
+                  you switch on, and support. If you joined the waitlist, we write to you only about RoboHost's launch and your
+                  place in line.
+                </li>
+                <li><strong>To tell our team about new sign-ups</strong>, so we can help you get set up.</li>
+                <li>
+                  <strong>To meet legal obligations:</strong> tax and GST records, Form C under immigration law, and lawful
+                  requests from authorities.
+                </li>
+              </ul>
+              <p>
+                We process your data with your consent, which you give when you sign up, join the waitlist or connect an
+                account, and for the legitimate uses the DPDP Act allows, such as meeting a legal obligation. You can withdraw
+                consent at any time (<a href="#your-rights">section 11</a>). Withdrawing does not undo processing already done,
+                and we may then be unable to provide some or all of the service.
+              </p>
+              <p>
+                <strong>We do not sell personal data.</strong> We don't use it for advertising, and we don't build advertising
+                profiles.
+              </p>
+            </section>
+
+            <section id="whatsapp">
+              <h2><span class="num">4</span>WhatsApp</h2>
+              <p>
+                RoboHost sends and receives WhatsApp messages through the WhatsApp Business Platform (Cloud API), which Meta
+                provides.
+              </p>
+              <ul>
+                <li>
+                  <strong>Hosts:</strong> when you link your WhatsApp number, we send a one-time code to confirm it. We then
+                  store your number, your alert preferences and your chat with Nova. You can ask Nova about your bookings and
+                  give it instructions, and we send you the alerts you have switched on, such as new bookings and urgent guest
+                  messages.
+                </li>
+                <li>
+                  <strong>Guests:</strong> when a guest messages a property on WhatsApp through RoboHost, their messages and
+                  any photos they share go to the host, and Nova drafts a reply.
+                </li>
+                <li>
+                  <strong>Staff, vendors and tenants:</strong> we send them cleaning jobs, work orders, gate passes and rent
+                  reminders on the host's behalf.
+                </li>
+              </ul>
+              <p>
+                From WhatsApp we receive your phone number, your WhatsApp profile name, the content of the messages and media
+                you send us, and delivery and read receipts.
+              </p>
+              <p>
+                We use this data only to provide the service described above. We don't use WhatsApp data for advertising and we
+                don't sell it. We share it only with the host the conversation belongs to and with the providers in
+                <a href="#sharing">section 6</a>. For example, a message's text goes to our AI provider so Nova can draft a
+                reply. Meta handles messages as the WhatsApp provider under WhatsApp's own terms and privacy policy.
+              </p>
+              <p>
+                To stop receiving messages, tell us on WhatsApp or by email. Hosts can also switch alerts off in RoboHost. To
+                delete your WhatsApp data, see <a href="#delete-your-data">section 12</a>.
+              </p>
+            </section>
+
+            <section id="ai">
+              <h2><span class="num">5</span>Nova and AI</h2>
+              <p>
+                Nova is RoboHost's AI co-host. It uses large language models from <strong>Anthropic</strong> (Claude), and we
+                may also use <strong>Google's</strong> Gemini models. To do its job, Nova sends these providers:
+              </p>
+              <ul>
+                <li>guest messages and the conversation so far;</li>
+                <li>property information, house rules and listing text;</li>
+                <li>examples of your earlier replies and the edits you made to its drafts;</li>
+                <li>listing photos, when you ask for a photo check;</li>
+                <li>booking-confirmation emails you forward to RoboHost, so it can read the booking details;</li>
+                <li>your questions on WhatsApp, with a summary of your bookings and revenue, so it can answer them.</li>
+              </ul>
+              <p>We don't send passport or visa numbers to AI providers.</p>
+              <p>
+                We use these providers under business terms that do not let them train their models on the data we send. They
+                keep it only for as long as those terms allow, for example to monitor for abuse.
+              </p>
+              <p>
+                We don't train AI models on your data. Nova learns your style by keeping examples of your replies and
+                corrections in your account and including them when it drafts for your properties.
+              </p>
+              <p>
+                By default, every reply Nova drafts waits for your approval. If you switch on Auto-Pilot for a property, Nova
+                can send some replies on its own. When Nova screens a booking request, its view is advice, and the host
+                decides. AI can make mistakes, so check its drafts.
+              </p>
+            </section>
+
+            <section id="sharing">
+              <h2><span class="num">6</span>Who we share it with</h2>
+              <p>We share personal data only as this section describes.</p>
+
+              <h3>Service providers</h3>
+              <div class="table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th scope="col">Provider</th>
+                      <th scope="col">What they do for us</th>
+                      <th scope="col">Where</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>Amazon Web Services</td><td>Hosts the RoboHost app, its database and uploaded files</td><td>Mumbai, India</td></tr>
+                    <tr><td>GitHub</td><td>Hosts our public website, robohost.co.in</td><td>United States</td></tr>
+                    <tr><td>Anthropic</td><td>AI models behind Nova</td><td>United States</td></tr>
+                    <tr>
+                      <td>Google</td>
+                      <td>Gemini AI models, where we use them, and the web fonts on our pages, which means your browser sends Google your IP address when a page loads</td>
+                      <td>United States and other countries</td>
+                    </tr>
+                    <tr><td>Meta (WhatsApp)</td><td>Sending and receiving WhatsApp messages</td><td>Global</td></tr>
+                    <tr><td>Channex</td><td>Channel manager: connects booking sites and carries bookings, rates and guest messages</td><td>Outside India</td></tr>
+                    <tr><td>Razorpay</td><td>Payment links, plan subscriptions and owner payouts (RazorpayX)</td><td>India</td></tr>
+                    <tr><td>Resend</td><td>Sending our emails</td><td>United States</td></tr>
+                    <tr><td>Twilio SendGrid</td><td>Receiving booking emails you forward to RoboHost, if you use this</td><td>United States</td></tr>
+                    <tr><td>Telegram</td><td>Internal alerts to our team about new sign-ups and waitlist entries</td><td>Outside India</td></tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <h3>Booking sites and services you connect</h3>
+              <p>
+                We act in your Airbnb, Booking.com, MakeMyTrip, MagicBricks, Urban Company and Snabbit accounts on your
+                instructions. For example, we give a cleaning partner your property's address and a time to book a clean.
+                Those companies handle data under their own privacy policies.
+              </p>
+
+              <h3>People the host chooses</h3>
+              <p>
+                Hosts can share data with their co-hosts, team members, property owners and investors, cleaners and vendors,
+                and society or gate staff. For a gate pass, for example, that is the guest's name, phone number and dates.
+              </p>
+
+              <h3>Authorities</h3>
+              <p>
+                Hosts file Form C details with India's Bureau of Immigration through e-FRRO, and RoboHost prepares those
+                filings. We also disclose data when the law requires it, for example to tax authorities or under a valid order
+                from a court or government agency.
+              </p>
+
+              <h3>If the business changes hands</h3>
+              <p>
+                If Iraava merges, is acquired or sells RoboHost, personal data may pass to the new owner, who must keep to this
+                policy.
+              </p>
+            </section>
+
+            <section id="storage">
+              <h2><span class="num">7</span>Where it is stored</h2>
+              <p>
+                We store RoboHost's data in India, on Amazon Web Services in Mumbai. Some of the providers in
+                <a href="#sharing">section 6</a> process data outside India, mainly in the United States. The DPDP Act allows
+                this except to countries the Government of India restricts, and we will follow any such restriction.
+              </p>
+            </section>
+
+            <section id="security">
+              <h2><span class="num">8</span>How we protect it</h2>
+              <ul>
+                <li>Connections to robohost.co.in and app.robohost.co.in use HTTPS.</li>
+                <li>Passwords are stored as salted one-way hashes (PBKDF2-SHA256), so nobody at RoboHost can read them.</li>
+                <!-- Hosts' bank account details, PAN, GSTIN and TAN join this list once the encryption in
+                     db/models_host.py is deployed and scripts/migrate_encrypt_host_identity.py has run on
+                     prod. Until then they are not encrypted there, so the policy must not say they are. -->
+                <li>
+                  Booking-site sign-ins and logins, passport and visa numbers, and tenant Aadhaar numbers are encrypted in our
+                  database.
+                </li>
+                <li>
+                  App sessions expire after 12 hours. Password-reset links work once and expire after an hour. Links to
+                  invoices and documents expire.
+                </li>
+                <li>Card and UPI payments happen on Razorpay, and we never see card numbers.</li>
+                <li>
+                  Only staff who need it can access personal data. Viewing a stored bank account, passport or visa number, or
+                  booking-site sign-in takes an administrator, and every such view is logged.
+                </li>
+              </ul>
+              <p>
+                No system is completely secure. If a breach affects your personal data, we will tell you and the Data
+                Protection Board of India as the law requires.
+              </p>
+            </section>
+
+            <section id="retention">
+              <h2><span class="num">9</span>How long we keep it</h2>
+              <ul>
+                <li>
+                  <strong>Your account and property data:</strong> while your account is open. When you close it, we delete it
+                  within 30 days, except for the records below.
+                </li>
+                <li><strong>Invoices, payments and tax records:</strong> up to 8 years, as Indian tax and company law requires.</li>
+                <li>
+                  <strong>Form C and other records about foreign guests:</strong> for as long as immigration law requires the
+                  host to keep them.
+                </li>
+                <li>
+                  <strong>Guest, tenant and staff data:</strong> for as long as the host keeps it in RoboHost. It is deleted with
+                  the host's account.
+                </li>
+                <li>
+                  <strong>Waitlist entries:</strong> until 12 months after launch, unless you create an account or ask us to
+                  delete yours sooner.
+                </li>
+                <li><strong>Server logs:</strong> for a limited period, for security and troubleshooting.</li>
+              </ul>
+            </section>
+
+            <section id="cookies">
+              <h2><span class="num">10</span>Cookies and browser storage</h2>
+              <p>
+                RoboHost does not set cookies, and we don't use analytics, advertising or tracking tools. The app and website
+                save a few items in your browser's local storage so they work:
+              </p>
+              <ul>
+                <li>your sign-in token, so you stay signed in;</li>
+                <li>your light or dark theme;</li>
+                <li>which role you are viewing RoboHost as;</li>
+                <li>your waitlist place and referral code, so you can see them again;</li>
+                <li>a listing link you checked, so you can import it after you sign up;</li>
+                <li>a vendor's name on the vendor portal.</li>
+              </ul>
+              <p>
+                Clearing your browser's site data removes them. Google Fonts, and the Channex panel shown inside the app, may
+                set cookies of their own under their own policies.
+              </p>
+            </section>
+
+            <section id="your-rights">
+              <h2><span class="num">11</span>Your rights</h2>
+              <p>Under the DPDP Act, you can:</p>
+              <ul>
+                <li>
+                  get a summary of the personal data we hold about you and how we use it, and the names of those we have
+                  shared it with;
+                </li>
+                <li>have inaccurate or incomplete data corrected, completed or updated;</li>
+                <li>have your data deleted, unless the law requires us to keep it;</li>
+                <li>withdraw consent you have given us, as easily as you gave it;</li>
+                <li>have a grievance about how we handle your data resolved; and</li>
+                <li>nominate someone to exercise these rights for you if you die or become unable to.</li>
+              </ul>
+              <p>
+                To use any of these rights, email <a href="mailto:robohost.co@gmail.com">robohost.co@gmail.com</a> from the address on
+                your account, or tell us enough to identify you. We may ask you to confirm your identity. We will reply within
+                30 days.
+              </p>
+              <p>
+                If you are a guest, tenant, cleaner or vendor of a host who uses RoboHost, please contact the host first, since
+                they decide how your data is used. If you write to us instead, we will pass your request to the host and help
+                them answer it.
+              </p>
+              <p>
+                If you are not satisfied with our answer, you can complain to the Data Protection Board of India.
+              </p>
+            </section>
+
+            <section id="delete-your-data">
+              <h2><span class="num">12</span>Deleting your data</h2>
+              <ul>
+                <li>
+                  <strong>Hosts:</strong> email <a href="mailto:robohost.co@gmail.com">robohost.co@gmail.com</a> from your account's
+                  email address with the subject "Delete my RoboHost account". We will confirm, then delete your account,
+                  properties, messages, saved booking-site sign-ins, WhatsApp link and chat history within 30 days. We keep only
+                  the records <a href="#retention">section 9</a> says we must.
+                </li>
+                <li>
+                  <strong>Booking sites:</strong> you can disconnect at any time. Logging out of a site inside RoboHost deletes
+                  its saved sign-in.
+                </li>
+                <li>
+                  <strong>WhatsApp:</strong> email us with your WhatsApp number, and we will delete your WhatsApp messages and
+                  unlink the number.
+                </li>
+                <li>
+                  <strong>Waitlist:</strong> email us from the address you signed up with, and we will remove your entry.
+                </li>
+                <li>
+                  <strong>Guests, tenants, cleaners and vendors:</strong> ask the host, or email us and we will help.
+                </li>
+              </ul>
+            </section>
+
+            <section id="children">
+              <h2><span class="num">13</span>Children</h2>
+              <p>
+                RoboHost accounts are for adults. We don't knowingly let anyone under 18 create an account or join the
+                waitlist. Children can appear in booking details, such as the number of guests or a Form C entry. Hosts should
+                collect only what the booking or the law requires.
+              </p>
+            </section>
+
+            <section id="changes">
+              <h2><span class="num">14</span>Changes to this policy</h2>
+              <p>
+                When our practices change, we will update this page and the date at the top. If a change is significant, we
+                will tell hosts by email or in the app before it takes effect.
+              </p>
+            </section>
+
+            <section id="contact">
+              <h2><span class="num">15</span>Contact and Grievance Officer</h2>
+              <address>
+                <strong>Iraava Hospitality Private Limited</strong><br />
+                Cloud-9 Towers, Vaishali, Ghaziabad, Uttar Pradesh 201010, India<br />
+                Email: <a href="mailto:robohost.co@gmail.com">robohost.co@gmail.com</a>
+              </address>
+              <p>
+                <strong>Grievance Officer:</strong> Jenson James, at the address and email above. Write to them
+                with any concern about how we handle personal data. We aim to resolve grievances within one month of
+                receiving them.
+              </p>
+            </section>
+          </article>
+        </div>
+      </main>
+
+      <footer class="border-t border-night-line">
+        <div class="mx-auto flex max-w-6xl flex-col gap-3 px-4 py-8 text-sm text-ink-muted sm:px-8 lg:flex-row lg:items-center lg:justify-between">
+          <p>RoboHost is a product of Iraava Hospitality Private Limited.</p>
+          <nav aria-label="Legal" class="-mx-2 flex flex-wrap items-center">
+            <a class="legal-foot-link" href="/terms">Terms</a>
+            <a class="legal-foot-link" href="/refunds">Refunds</a>
+            <a class="legal-foot-link" href="/privacy" aria-current="page">Privacy</a>
+            <a class="legal-foot-link" href="/contact">Contact</a>
+            <a class="legal-foot-link" href="https://app.robohost.co.in/signin">Sign in</a>
+          </nav>
+          <p>© 2026 Iraava Hospitality Private Limited</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
