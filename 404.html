@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RoboHost — AI co-host for India's homestays and rentals</title>
+    <meta
+      name="description"
+      content="RoboHost is the AI co-host for Indian homestays and short-stay rentals: guest messaging, OTA operations, calendar and price sync, cleaning, billing and GST, all run from WhatsApp."
+    />
+    <!-- Share previews (WhatsApp, LinkedIn, X) for the waitlist's share link,
+         robohost.co.in/?ref=<code>#waitlist. The image is public/og-waitlist.jpg, kept under
+         300 KB because WhatsApp drops larger previews. It names no launch date; when the doors
+         open, put the title and description back to the evergreen ones and swap the image. -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="RoboHost" />
+    <meta property="og:url" content="https://robohost.co.in/" />
+    <meta property="og:title" content="RoboHost: the AI co-host for India's homestays and rentals." />
+    <meta property="og:description" content="The AI co-host for India's homestays and rentals: guest replies, one calendar, GST and Form C." />
+    <meta property="og:image" content="https://robohost.co.in/og-waitlist.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="RoboHost: the AI co-host for India's homestays and rentals." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="RoboHost: the AI co-host for India's homestays and rentals." />
+    <meta name="twitter:description" content="The AI co-host for India's homestays and rentals." />
+    <meta name="twitter:image" content="https://robohost.co.in/og-waitlist.jpg" />
+    <!-- Phase 43 landing faces: Bricolage Grotesque (display), DM Sans (body) and Tiro
+         Devanagari Hindi (the one Hindi accent line). Only the landing page uses them, and
+         a browser fetches a font file only once something on screen asks for it. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=DM+Sans:opsz,wght@9..40,400..700&family=Tiro+Devanagari+Hindi&display=swap"
+    />
+    <!-- Phase 42: resolve the theme before the first paint. React mounting is async, so
+         without this a light-mode reload flashes the dark palette for a frame or two.
+         Mirrors the resolution order in src/context/ThemeContext.jsx: explicit stored
+         choice first, otherwise follow the OS. Kept inline and dependency-free so it runs
+         ahead of the module bundle. -->
+    <script>
+      ;(function () {
+        try {
+          var stored = localStorage.getItem("robohost.theme")
+          var theme =
+            stored === "light" || stored === "dark"
+              ? stored
+              : window.matchMedia("(prefers-color-scheme: light)").matches
+                ? "light"
+                : "dark"
+          document.documentElement.setAttribute("data-theme", theme)
+          document.documentElement.style.colorScheme = theme
+        } catch (e) {
+          document.documentElement.setAttribute("data-theme", "dark")
+        }
+      })()
+    </script>
+    <script type="module" crossorigin src="/assets/site-BDVEooso.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/src-Ci7YquTA.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
